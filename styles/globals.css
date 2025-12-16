@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand tokens for non-Tailwind usage */
+:root{
+  --nn-bg:#0B1220;
+  --nn-surface:#0F1724;
+  --nn-cyan:#00B5D8;
+  --nn-purple:#7C3AED;
+  --nn-warm:#FFB86B;
+  --nn-muted:#B9C6D8;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+body {
+  @apply bg-[var(--nn-bg)] text-[var(--nn-muted)] font-sans;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+a { color: var(--nn-cyan); }

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">NeuralNexus logo</title>
+  <desc id="desc">Circular network of nodes forming an N-shaped path in purple and cyan</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#00B5D8"/>
+    </linearGradient>
+    <style>
+      .stroke { stroke: url(#g); stroke-width:8; fill:none; stroke-linecap:round; stroke-linejoin:round;}
+      .node { fill: url(#g); stroke:#0B1220; stroke-width:2; }
+    </style>
+  </defs>
+
+  <!-- circle background -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#0F1724" stroke-width="4" />
+
+  <!-- N-shaped path with rounded corners -->
+  <path class="stroke" d="M120 280 L180 140 L240 260 L300 120" />
+
+  <!-- nodes along the path -->
+  <circle class="node" cx="120" cy="280" r="12"/>
+  <circle class="node" cx="180" cy="140" r="12"/>
+  <circle class="node" cx="240" cy="260" r="12"/>
+  <circle class="node" cx="300" cy="120" r="12"/>
+
+  <!-- micro connectors -->
+  <line x1="160" y1="300" x2="200" y2="320" stroke="url(#g)" stroke-width="4" stroke-linecap="round" />
+  <line x1="230" y1="100" x2="260" y2="80" stroke="url(#g)" stroke-width="4" stroke-linecap="round" />
+</svg>
